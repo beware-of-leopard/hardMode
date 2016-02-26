@@ -1,0 +1,163 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body > * {
+	padding: 0 70px 0 70px;
+}
+
+ul{
+	list-style: none;
+}
+
+.salesAlert{
+	overflow:hidden;
+}
+
+.salesAlert li{
+	float:left;
+	margin: 15px 15px 15px 0;
+	padding: 4px;
+
+}
+
+.salesAlert{
+  background: #EC6634;
+  color: white;
+}
+
+.salesAlert li:first-child{
+	background: #C7532C;
+}
+
+nav ul, nav img{
+	float: left;
+}
+
+
+
+nav li{
+	float:left;
+	margin-right: 15px;
+	line-height: 250px;
+}
+
+.actionsContainer div{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.actionsContainer div:last-child{
+	border: 1px solid #f4f4f4;
+	border-radius: 5%;
+}
+
+.actionsContainer{
+  float:right;
+  width: 250px;
+  text-align: right;
+}
+
+.heroImg{
+  margin-top: 250px;
+  background: #f4f4f4;
+  text-align: center;
+  display: block;
+  overflow: hidden;
+  padding: 7px;
+  
+}
+
+.heroImg div{
+	display: inline-block;
+	margin:auto;
+/*	margin-top: 5px;
+*/	z-index: 1;
+}
+
+.heroImg h2{
+	padding: 80px 0 80px 0;
+}
+
+.featuredProducts{
+	text-align: center;
+	padding:20px;
+}
+
+.featuredProducts img{
+	margin: auto;
+	display: inline-block;
+
+}
+
+.social{
+	background-image: url('assets/hatch-light@2x.png');
+	background-repeat: repeat-x;
+	text-align: center;
+	padding-top: 40px;
+	margin-top: 40px;
+}
+
+.social div:not(.socialIcon){
+	display: inline-block;
+	margin: auto;
+	text-align: left;
+	vertical-align: top;
+	padding: 20px;
+	width: 200px;
+	width: 20%;
+}
+
+.social img{
+	width: 100%;
+}
+
+.facebookIcon{
+	background: url('assets/sprite@2x.png') no-repeat -540px 0;
+	width: 70px;
+	height: 70px;
+	size: 50%;
+   display: inline-block;
+}
+ .twitterIcon{
+ 	background: url('assets/sprite@2x.png') no-repeat -540px -160px;
+	width: 70px;
+	height: 70px;
+   display: inline-block;
+ }
+
+ .pintrestIcon{
+ 	background: url('assets/sprite@2x.png') no-repeat -540px -80px;
+	width: 70px;
+	height: 70px;
+   display: inline-block;
+ }
+
+
+
+footer{
+	margin-top: 30px;
+	background: #f4f4f4;
+	overflow: hidden;
+	padding:45px 80px 40px 80px;
+}
+
+footer ul{
+	float: left;
+	margin-right: 30px;
+}
+
+footer ul li:first-child{
+	font-weight: bold;
+	padding-bottom: 5px;
+}
+
+.footerContact{
+	float: right;
+}
+
+.heroImg, footer{
+	background-image: url('assets/perforated-bottom@2x.png');
+	background-repeat: repeat-x;
+}
