@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="normalize.css">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<title>Hard Mode</title>
@@ -33,16 +34,23 @@
 		       <div class="cartContainer">
 		       		<div class="cart sprite"></div>
 		       		<p>Cart</p>
+		       		<div>0</div>
 		       </div>
 		       
 		       <div>
-			       <form><input type="text" placeholder="Search">	</input>
+			       <form>
+			       		<label for="search">
+			       		<div class="search sprite"></div>
+			       		</label>
+				       	<input type="text" id="search" placeholder="Search">
+				       	</input>
 			       </form>
 		       
 		       </div>
 		    </div>
 		</div>
 	</nav>
+	<div class="navBorder"></div>
 
 	<div class="heroImg">
 		<div>
@@ -85,9 +93,18 @@
 	</div>
 
 	<div class="featuredProducts">
-		<img src="assets/bow-ties.jpg">
+		<div class="altProducts">
+			<img src="assets/bow-ties.jpg">
+			<p>Bow Ties</p>
+		</div>
+		<div class="altProducts">
 		<img src="assets/pocket-squares.jpg">
-		<img src="assets/tie-bars.jpg">
+		<p>Pocket</br>Squares</p>
+			</div>
+		<div class="altProducts">
+			<img src="assets/tie-bars.jpg">
+			<p>Tie Bars</p>
+		</div>
 		<div class="story">
 			<h3>We started designing and selling neckties in 1971.</br>After 44 years, we're still family-owned and operated.</h3>
 			<a href="#">VIEW OUR STORY</a>
@@ -115,7 +132,7 @@
 			<form>
 				<input type="text" placeholder="name@example.com"></input>
 			</form>
-			<a href="#">SUBSCRIBE ME</a>
+			<button>SUBSCRIBE ME</button>
 		</div>
 
 		<div>
@@ -159,8 +176,10 @@
 
 		<div class="footerContact">
 			<h3>We're here for you.</h3>
-			<p>help@skinnyties.com</p>
-			<p>877-687-8437</p>
+			<div class="contactInfo">
+				<p>help@skinnyties.com</p>
+				<p>877-687-8437</p>
+			</div>	
 			<button>Contact Us</button>
 		</div>
 

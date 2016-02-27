@@ -5,11 +5,23 @@
 }
 
 body > * {
-	padding: 0 70px 0 70px;
-}
+	padding: 0 90px 0 90px;
+font-family: 'Architects Daughter', cursive;}
 
 ul{
 	list-style: none;
+}
+
+a{
+	color: #44ACED;
+}
+
+button{
+	background-color: #44ACED;
+	color: white;
+	padding: 5px;
+	border: none;
+	border-radius: 7%;
 }
 
 .salesAlert{
@@ -30,27 +42,35 @@ ul{
 
 .salesAlert li:first-child{
 	background: #C7532C;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+nav{
+	overflow: hidden;
 }
 
 nav ul, nav img{
 	float: left;
 }
 
-
-a{
-	color: #44ACED;
+nav ul{
+	margin-left: 50px;
 }
+
 
 nav li{
 	float:left;
-	margin-right: 15px;
+	margin-right: 25px;
 	line-height: 250px;
+	font-size: 1.5em;
 }
 
 .actionsContainer{
   float:right;
   width: 400px;
   text-align: right;
+  margin-top: 35px;
 }
 
 .actionsContainer div:not(.sprite){
@@ -62,34 +82,67 @@ nav li{
 .actionsContainer .cartContainer{
 	border: 1px solid #f4f4f4;
 	border-radius: 5%;
-	width: 150px;
-}
-
-.cartContainer{
+	width: 120px;
 	text-align: left;
 	float: left;
-	padding: 15px;
+	padding: 10px;
+		vertical-align: top;
+
+}
+
+.actionsContainer .cartContainer > *{
+	margin-right: 10px;
 }
 
 .cartContainer p{
 	float: left;
 }
 
-.cart{
+.cartContainer div:last-child{
+	background: grey;
+	border-radius: 15%;
+	padding: 0 8px 2px 8px;
+	float: left;
+	margin: 0;
+	color: white;
+}
+
+div.cart{
 	background: url('assets/sprite@2x.png') no-repeat -90px -2px;
 	height: 24px;
 	width: 28px;
 	float: left;
 }
 
+/*add a div within the input to put the sprite on*/
+
+.actionsContainer div.search{
+	background: url('assets/sprite@2x.png') no-repeat -30px 0;
+	width: 26px;
+	height: 26px;
+}
+
+.actionsContainer form{
+	border: 1px solid grey;
+	border-radius: 3%;
+	overflow: hidden;
+	padding: 10px;
+}
+
+.actionsContainer form input, .actionsContainer form div{
+	float: left;
+}
+
+.actionsContainer input{
+	border: none;
+	padding-left: 10px;
+}
+
 .heroImg{
-  margin-top: 250px;
   background: #f4f4f4;
   text-align: center;
   display: block;
-  overflow: hidden;
-  padding: 7px;
-  
+  overflow: hidden;  
 }
 
 .heroImg div{
@@ -100,18 +153,35 @@ nav li{
 
 .heroImg h2{
 	padding: 80px 0 80px 0;
+	font-size: 3em;
 }
 
 .featuredProducts{
 	text-align: center;
-	padding: 40px 0 40px 0;
+	padding: 40px 90px 40px 90px;
+}
+
+.featuredProducts div:not(.story){
+	margin: auto;
+	display: inline-block;
+	margin: 0 20px 0 20px;
+	width: calc(33% - 60px);
+/*	width: 370px;
+*/	position: relative;
+}
+
+.featuredProducts .altProducts:last-child{
+	margin:0;
+}
+
+.featuredProducts p{
+	position: absolute;
+	top: 15px;
+	right: 15px;
 }
 
 .featuredProducts img{
-	margin: auto;
-	display: inline-block;
-	padding: 0 10px 0 10px;
-	width: 350px;
+	width: 100%;
 }
 
 .featuredProducts .story{
@@ -120,13 +190,14 @@ nav li{
 
 .story h3{
 	margin-bottom: 15px;
+	font-size: 2em;
 }
 
 .social{
 	background-image: url('assets/hatch-light@2x.png');
 	background-repeat: repeat-x;
 	text-align: center;
-	padding-top: 40px;
+	padding-top: 80px;
 	margin-top: 40px;
 }
 
@@ -139,38 +210,44 @@ nav li{
 	margin: auto;
 	text-align: left;
 	vertical-align: top;
-	padding: 20px;
 	width: 200px;
 	width: 20%;
+}
+
+.social > div:not(:last-child){
+	padding-right: 30px;
 }
 
 .social img{
 	width: 100%;
 }
 
+.socialIcon{
+	margin-right: 5px;
+}
 
-.facebookIcon{
-	background: url('assets/sprite@2x.png') no-repeat -540px 0;
-	width: 70px;
-	height: 70px;
-	size: 50%;
+ .facebookIcon{
+	background: url('assets/sprite@2x.png') no-repeat -270px 0;
+	background-size: 400px 200px;
+	width: 35px;
+	height: 35px;
    display: inline-block;
 }
  .twitterIcon{
- 	background: url('assets/sprite@2x.png') no-repeat -540px -160px;
-	width: 70px;
-	height: 70px;
+ 	background: url('assets/sprite@2x.png') no-repeat -270px -80px;
+	background-size: 400px 200px;
+	width: 35px;
+	height: 35px;
    display: inline-block;
  }
 
  .pintrestIcon{
- 	background: url('assets/sprite@2x.png') no-repeat -540px -80px;
-	width: 70px;
-	height: 70px;
+ 	background: url('assets/sprite@2x.png') no-repeat -270px -40px;
+	background-size: 400px 200px;
+	width: 35px;
+	height: 35px;
    display: inline-block;
  }
-
-
 
 footer{
 	margin-top: 30px;
@@ -191,9 +268,42 @@ footer ul li:first-child{
 
 .footerContact{
 	float: right;
+	background: #A2AFC0;
+	padding: 15px;
+	border-radius: 3%;
+	width: 280px;
+	color: white;
 }
 
-.heroImg, footer{
+.footerContact h3{
+	font-size: 1.5em;
+	margin-bottom: 15px;
+}
+
+.footerContact button{
+	float: right;
+	font-size: 1.2em;
+	border: 1px solid lightblue;
+}
+
+.footerContact .contactInfo{
+	float: left;
+}
+
+.navBorder{
+	z-index: 4;
+	position: absolute;
+	height: 8px;
+	width: 100%;
+	padding: 0;
+}
+
+.navBorder, footer{
 	background-image: url('assets/perforated-bottom@2x.png');
 	background-repeat: repeat-x;
 }
+
+/*.heroImg, footer{
+	background-image: url('assets/perforated-bottom@2x.png');
+	background-repeat: repeat-x;
+}*/
