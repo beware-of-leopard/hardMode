@@ -114,8 +114,6 @@ div.cart{
 	float: left;
 }
 
-/*add a div within the input to put the sprite on*/
-
 .actionsContainer div.search{
 	background: url('assets/sprite@2x.png') no-repeat -30px 0;
 	width: 26px;
@@ -136,6 +134,19 @@ div.cart{
 .actionsContainer input{
 	border: none;
 	padding-left: 10px;
+}
+
+.navBorder{
+	z-index: 4;
+	position: absolute;
+	height: 8px;
+	width: 100%;
+	padding: 0;
+}
+
+.navBorder, footer{
+	background-image: url('assets/perforated-bottom@2x.png');
+	background-repeat: repeat-x;
 }
 
 .heroImg{
@@ -166,8 +177,7 @@ div.cart{
 	display: inline-block;
 	margin: 0 20px 0 20px;
 	width: calc(33% - 60px);
-/*	width: 370px;
-*/	position: relative;
+	position: relative;
 }
 
 .featuredProducts .altProducts:last-child{
@@ -289,21 +299,3 @@ footer ul li:first-child{
 .footerContact .contactInfo{
 	float: left;
 }
-
-.navBorder{
-	z-index: 4;
-	position: absolute;
-	height: 8px;
-	width: 100%;
-	padding: 0;
-}
-
-.navBorder, footer{
-	background-image: url('assets/perforated-bottom@2x.png');
-	background-repeat: repeat-x;
-}
-
-/*.heroImg, footer{
-	background-image: url('assets/perforated-bottom@2x.png');
-	background-repeat: repeat-x;
-}*/
